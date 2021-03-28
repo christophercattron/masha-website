@@ -1,3 +1,28 @@
+/*Set font family for body & h elements*/
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+
+
+main {
+  height: 100%;
+}
+
+/*Fullscreen background image*/
+.bg-masha {
+  /* The image used */
+  background-image: url("../images/masha-main-b&w.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
 
 /*Footer*/
 .last-updated{
@@ -5,84 +30,3 @@
 }
 
 
-
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #222;
-    --translate-x: 30px;
-    --translate-y: -20px;
-  }
-  
-  .portrait {
-    width: 80%;
-    max-width: 600px;
-    margin: 0 auto;
-    height: 600px;
-    position: relative;
-    overflow: hidden;
-  }
-  .portrait:hover .hover {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-    opacity: 0.4;
-  }
-  .portrait:hover .hover-img {
-    -moz-transform: translate(var(--translate-x), var(--translate-y));
-    -ms-transform: translate(var(--translate-x), var(--translate-y));
-    -webkit-transform: translate(var(--translate-x), var(--translate-y));
-    transform: translate(var(--translate-x), var(--translate-y));
-  }
-  
-  .fill, .hover-img:after {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
-  }
-  
-  .z-10 {
-    z-index: 10;
-  }
-  
-  .hover {
-    -moz-transition: all 380ms cubic-bezier(0.16, 0.01, 0.77, 1);
-    -o-transition: all 380ms cubic-bezier(0.16, 0.01, 0.77, 1);
-    -webkit-transition: all 380ms cubic-bezier(0.16, 0.01, 0.77, 1);
-    transition: all 380ms cubic-bezier(0.16, 0.01, 0.77, 1);
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-  }
-  
-  .hover-img {
-    -moz-transition: opacity, -moz-transform 320ms cubic-bezier(0.16, 0.01, 0.77, 1);
-    -o-transition: opacity, -o-transform 320ms cubic-bezier(0.16, 0.01, 0.77, 1);
-    -webkit-transition: opacity, -webkit-transform 320ms cubic-bezier(0.16, 0.01, 0.77, 1);
-    transition: opacity, transform 320ms cubic-bezier(0.16, 0.01, 0.77, 1);
-  }
-  .hover-img:after {
-    content: '';
-    background-color: red;
-    mix-blend-mode: color;
-  }
-  
-  .cover-img {
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-image: url(https://lh3.googleusercontent.com/Wpv2WfCEKaT1CeRcFySy6ayfjho76_BBlzFo85ZKJc93U61ca6PI8WvAbswfUUZtD6C9nk1zI7TWScmrc-FDtg58IpBt_nlHtB4shBi669lQ1CUSkt79gg2n3poxAztfQCifa4LLRxRq0rIrGL-mmFFLsjfS3U0gdCMDiNtYQtkCwlduO0vn4fzEWeiqporXtNjU0nTcViaqU-OY3j-H9-TVLr30-W44YXNRtpK18FCn2LzV9l6fOQ6QFyyBDQQH6_1xzWYUOG5z9g9dHzE7ge_LG2h6bZqW4T6BpLrOBaL7Rrak8Uufg3Z2AK-uUnkLIBsBv-ZoUALJAsFg1QHjY-NGI-iCrwH6BPNzKKri_yB4hstg5fK8xaS94IHhM8jatSzgXJXMRbNowDQXOL5mDkBxFOKeGwZ27IEDwHPfQTw8D7xolE1ZL6VmwRNu_Cdj_wWchm4RasFp7Nt4YURVfLceGJwNPdInj-0DSxLXNfrtplif2ZB6UnW03gO4QocXEEQZc6qJw8ZxdlkG7ApgHnpb5zsYkytXrWvgy49I-4NUAHHg_xhGu3RyDPqgCcNjc6wjBlzNK-Cqpb7i-YCOSoUEwghkh91QTke_A3NeOcHMSI8fQ3QdelYyVDp_I54P-j_N4x7T2JWbefNI9o0JyoXNl0vfVhZMOf88uqbPs0vq-zBrtw-bnUgDimyeFA0D9lJUYYcHGIH7yigij-rr2-yLZw=w678-h903-no?authuser=0)
-  }
-  
-  
-  /* Main title in image overlay*/
-  .c-preview-title {
-    position: relative;
-    z-index: 10;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }

@@ -1,77 +1,27 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="resources/css/style.css"><!--Link to my style.css for this site-->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/css/style.css"><!--Link to my style.css for this site-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><!--W3.CSS stylesheet-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"><!--Montserrat font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Font Awesome 4.7.0-->
+  </head>
 
-</style>
 
-<script>
-  var root = document.getElementById('portrait');
+<!-- Body Content -->
+  <body class="w3-black">  
+    <main class="w3-padding-large"><!--Main div-->
+      <div class="bg-masha">Hello</div>
+      <p>Childhood cancer survivor.</p>
+      <p>Complex post-traumatic stress disorder (CPTSD) fighter & advocate.</p>
+      <p>Russian.</p>
   
-  var mouse_monitor = function(e) {
-     let x = e.clientX/innerWidth;
-     let y = e.clientY/innerHeight;
-     
-     let move_x = (x>0.5) ? '-30px' : '30px';
-     let move_y = (y>0.5) ? '-20px' : '20px';
-     
-     root.style.setProperty("--translate-x", move_x);
-     root.style.setProperty("--translate-y", move_y);
-  }
-  
-  root.addEventListener("mousemove", mouse_monitor);</script>
-
-<body class="w3-black">
-
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Masha.</h1>
-  <!--masha hover image-->
-  <div class="portrait" id="portrait">
-    <div class="fill cover-img">
-      <h2 class="c-preview-title">Maria<br>Alexandrovna<br> Moiseenko Cattron</h2>
-    </div>
-    <div class="fill z-10 hover">
-      <div class="fill cover-img hover-img">
-      </div>
-    </div>
-  </div><!--END masha hover image-->
-
-  <script>
-    var root = document.getElementById('portrait');
-    
-    var mouse_monitor = function(e) {
-       let x = e.clientX/innerWidth;
-       let y = e.clientY/innerHeight;
-       
-       let move_x = (x>0.5) ? '-30px' : '30px';
-       let move_y = (y>0.5) ? '-20px' : '20px';
-       
-       root.style.setProperty("--translate-x", move_x);
-       root.style.setProperty("--translate-y", move_y);
-    }
-    
-    root.addEventListener("mousemove", mouse_monitor);</script>
-
-
-    <p>Childhood cancer survivor.</p>
-    <p>Complex post-traumatic stress disorder (CPTSD) fighter & advocate.</p>
-    <p>Russian.</p>
-    <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
 
   <!-- About Section -->
+  <!--
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">My Name</h2>
     <hr style="width:200px" class="w3-opacity">
@@ -79,57 +29,34 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
       adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
-    
-
-
-
+  </div>
+  -->
   <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
 
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
+    </main><!--END Main div-->
+  </body><!-- END Body Content -->
+
+
+  <!-- Footer -->
+  <footer class="w3-center w3-padding-64 " style="background-color: black">
+      <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a><!--EDIT THIS TO INCLUDE LINK TO #home-->
+      <div class="w3-xlarge w3-section">
+          <p class="w3-small" style="margin: 0;">Find Masha on social media:</p>
+          <a href="" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+          <a href="" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+          <a href="" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+          <a href="" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+          <a href="" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+          <a href="" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+          <a href="" target="_blank"><i class="fa fa-spotify w3-hover-opacity"></i></a>
       </div>
+      <p class="last-updated">Last Updated: Sunday 28th March, 2021 | 14:34 CST</p>
+      <p>Copyright &copy; 2021 All Rights Reserved by <a href="https://www.christophercattron.com" target="_blank">Christopher Cattron</a>.</p>
+  </footer><!-- End Footer -->
 
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-  
-        <!-- Footer -->
-        <footer class="w3-center w3-padding-64 " style="background-color: black">
-            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-            <div class="w3-xlarge w3-section">
-                <p class="w3-small" style="margin: 0;">Find me on social media:</p>
-                <a href="" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-                <a href="" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-                <a href="" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
-                <a href="" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-                <a href="" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-                <a href="" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-                <a href="" target="_blank"><i class="fa fa-spotify w3-hover-opacity"></i></a>
-            </div>
-            <p class="last-updated">Last Updated: Sunday 21st February, 2021 | 16:25 CST</p>
-            <p>Copyright &copy; 2021 All Rights Reserved by <a href="https://www.christophercattron.com" target="_blank">Christopher Cattron</a>.</p>
-        <!-- End footer -->
-        </footer>
 
-<!-- END PAGE CONTENT -->
-</div>
 
-</body>
+
+
+
 </html>
