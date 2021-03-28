@@ -41,7 +41,6 @@ body {
     top: 0;
     left: 0;
     z-index: 5;
-    background-color: yellow;
   }
   
   .z-10 {
@@ -65,7 +64,7 @@ body {
   }
   .hover-img:after {
     content: '';
-    background-color: whitesmoke;
+    background-color: red;
     mix-blend-mode: color;
   }
   
@@ -76,9 +75,14 @@ body {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    background-image: url("/resources/images/masha-main.JPG")
+    background-image: url(https://lh3.googleusercontent.com/Wpv2WfCEKaT1CeRcFySy6ayfjho76_BBlzFo85ZKJc93U61ca6PI8WvAbswfUUZtD6C9nk1zI7TWScmrc-FDtg58IpBt_nlHtB4shBi669lQ1CUSkt79gg2n3poxAztfQCifa4LLRxRq0rIrGL-mmFFLsjfS3U0gdCMDiNtYQtkCwlduO0vn4fzEWeiqporXtNjU0nTcViaqU-OY3j-H9-TVLr30-W44YXNRtpK18FCn2LzV9l6fOQ6QFyyBDQQH6_1xzWYUOG5z9g9dHzE7ge_LG2h6bZqW4T6BpLrOBaL7Rrak8Uufg3Z2AK-uUnkLIBsBv-ZoUALJAsFg1QHjY-NGI-iCrwH6BPNzKKri_yB4hstg5fK8xaS94IHhM8jatSzgXJXMRbNowDQXOL5mDkBxFOKeGwZ27IEDwHPfQTw8D7xolE1ZL6VmwRNu_Cdj_wWchm4RasFp7Nt4YURVfLceGJwNPdInj-0DSxLXNfrtplif2ZB6UnW03gO4QocXEEQZc6qJw8ZxdlkG7ApgHnpb5zsYkytXrWvgy49I-4NUAHHg_xhGu3RyDPqgCcNjc6wjBlzNK-Cqpb7i-YCOSoUEwghkh91QTke_A3NeOcHMSI8fQ3QdelYyVDp_I54P-j_N4x7T2JWbefNI9o0JyoXNl0vfVhZMOf88uqbPs0vq-zBrtw-bnUgDimyeFA0D9lJUYYcHGIH7yigij-rr2-yLZw=w678-h903-no?authuser=0)
   }
   
   
-  
-  
+  /* Main title in image overlay*/
+  .c-preview-title {
+    position: relative;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
