@@ -53,6 +53,64 @@ body {
 }
 
 
+#masha-main {
+  width: auto;
+  height: 100%;
+  left:50%;
+  position: absolute;
+  z-index: 15;
+  transform: translate(-50%, 0);
+  margin: 0 auto;
+  opacity: 1;
+  transition: opacity 2s;
+  transition-delay: 0.5s;
+}
+
+#masha-main-color {
+  width: auto;
+  height: 100%;
+  left:50%;
+  position: absolute;
+  z-index: 14;
+  transform: translate(-50%, 0);
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 2s;
+  transition-delay: 0.5s;
+}
+
+#masha-main:hover{
+  opacity: 0;
+}
+
+
+#masha-main:hover ~ #masha-main-color{
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+
+
+
+#name-main {
+  color: white;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  bottom: 10%;
+  margin: 0 auto;
+  z-index: 16;
+}
+
+.name-main-header{ /*Use this to edit the h1 elements in the name-main space */
+  margin: 0 0;
+  font-variant: small-caps;
+  font-family: 'Merriweather', serif;
+  font-size: 5vmin;
+
+}
+
+
 .landing-container > .landing-background{
   display: block;
   position: absolute;
@@ -146,40 +204,16 @@ left: 75%;
 }
 
 
+/*-------------     END      --------------*/
+/*_________________________________________*/
 
 
 
-#name-main {
-  color: white;
-  left:50%;
-  position: absolute;
-  transform: translate(-50%, 0);
-  bottom: 10%;
-  margin: 0 auto;
-  z-index: 16;
-}
 
-.name-main-header{ /*Use this to edit the h1 elements in the name-main space */
-  margin: 0 0;
-  font-variant: small-caps;
-  font-family: 'Merriweather', serif;
-  font-size: 5vmin;
+/*-----------------------------------------*/
+/*-------------    Footer    --------------*/
+/*-----------------------------------------*/
 
-}
-
-#masha-main {
-  width: auto;
-  height: 100%;
-  left:50%;
-  position: absolute;
-  z-index: 15;
-  transform: translate(-50%, 0);
-  margin: 0 auto;
-}
-
-
-
-/*Footer*/
 footer{
   text-align: center!important;
   padding-top: 64px!important;
