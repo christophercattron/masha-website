@@ -1,30 +1,99 @@
-/*Set font family for body & h elements*/
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+/* W3.CSS Defaults (with font changes)*/
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+
+html,body{font-family:"Mulish",sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+
+
+/*
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Mulish', sans-serif;
+*/
 
 
 body, html {
   height: 100%;
 }
 
-/*Fullscreen background image*/
-.bg-masha {
-  /* The image used */
-  background-image: url("../images/masha-main-b&w.jpg");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  /*fixed for parallax effect*/
-  background-attachment: fixed;
+body {
+  color: #fff;
+  background-color: #000;
 }
 
-/*Hero text for on top of Masha 
-.hero-bg-masha-text {
+
+.landing-container {
+  background-color: #999;
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  width: 100%; 
+}
+
+#name-main {
+  color: white;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  bottom: 10%;
+  margin: 0 auto;
+  z-index: 16;
+}
+
+.name-main-header{
+  margin: 0 0;
+  font-variant: small-caps;
+}
+
+
+#masha-main {
+  width: auto;
+  height: 100%;
+  left:50%;
+  position: absolute;
+  z-index: 15;
+  transform: translate(-50%, 0);
+  margin: 0 auto;
+}
+
+.landing-background{
+  object-fit: cover;
+  position: absolute;
+  filter:grayscale(90%) blur(5px);
+  width: 100%;
+  height: 100%;
+}
+
+#landing-background-1{
+  z-index: 1;
+}
+
+
+
+/*Hero text for on top of landing-container
+.hero-text {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -38,8 +107,48 @@ body, html {
 
 
 /*Footer*/
+footer{
+  text-align: center!important;
+  padding-top: 64px!important;
+  padding-bottom: 64px!important;
+}
+
+.to-the-top-button{
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+
+  color: #000!important;
+  background-color: #f1f1f1!important;
+}
+
+.to-the-top-button:hover {
+  color: #000!important;
+  background-color: #ccc!important;
+}
+
+.social-media-icons{
+  margin-top: 16px!important; 
+  margin-bottom: 16px!important; 
+  font-size: 24px!important; 
+}
+
+.social-media-icons a:hover{
+  opacity: 0.60;
+}
+
 .last-updated{
     font-size: 12px;
 }
 
-
+footer a:visited {
+  color: white;
+}
