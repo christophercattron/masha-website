@@ -53,7 +53,7 @@ body {
 }
 
 
-.landing-container > .landing-background img{
+.landing-container > .landing-background{
   display: block;
   position: absolute;
   /* transitions */
@@ -96,7 +96,6 @@ left: 50%;
 #button-3{
 left: 75%;
 }
-
 
 
 
