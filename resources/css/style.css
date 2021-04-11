@@ -89,7 +89,6 @@ body {
   transition-delay: 0s;
 }
 
-
 #name-main {
   color: white;
   left:50%;
@@ -106,8 +105,24 @@ body {
   font-variant: small-caps;
   font-family: 'Merriweather', serif;
   font-size: 5vmin;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
+}
 
 
+#name-main-v2{
+  color: white;
+  position: absolute;
+  z-index: 16;
+  width: 100%;
+}
+
+.name-main-header-v2{ /*Use this to edit the h1 elements in the name-main-v2 space */
+  margin: 0 0;
+  font-variant: small-caps;
+  font-family: 'Merriweather', serif;
+  font-size: 5vmin;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
+  text-align: center;
 }
 
 
@@ -136,25 +151,59 @@ body {
 }
 
 
-
-.button{
-color: white;
-position: absolute;
-z-index: 15;
-top: 50px;
+.link-category{
+  color: white;
+  position: absolute;
+  z-index: 30;
+  font-family: 'Libre Franklin', sans-serif;
+  font-style: italic;
+  font-size: x-large;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
 }
 
-#button-1{
-left: 25%;
+.link-category:link,
+.link-category:visited,
+.link-category:hover,
+.link-category:active{
+  text-decoration: none
 }
 
-#button-2{
-left: 50%;
+#link-category-1{
+  left:14.285714%;
+  transform: translate(-50%, 0);
+  bottom: 25%;
 }
 
-#button-3{
-left: 75%;
+#link-category-2{
+  left: 21.428571%;
+  transform: translate(-50%, 0);
+  bottom: 50%;
 }
+
+#link-category-3{
+  left:28.571428%;
+  transform: translate(-50%, 0);
+  bottom: 75%;
+}
+
+#link-category-4{
+  left:71.428572%;
+  transform: translate(-50%, 0);
+  bottom: 75%;
+}
+
+#link-category-5{
+  left: 78.571429%;
+  transform: translate(-50%, 0);
+  bottom: 50%;
+}
+
+#link-category-6{
+  left:85.714286%;
+  transform: translate(-50%, 0);
+  bottom: 25%;
+}
+
 
 
 
@@ -185,19 +234,37 @@ left: 75%;
 
 /* hover */
 
-#button-1:hover ~ #landing-background-1{ 
+#link-category-1:hover ~ #landing-background-1{ 
   filter: alpha(opacity=100);
   opacity: 1;
   z-index: 2;
 }
 
-#button-2:hover ~ #landing-background-2{ 
+#link-category-2:hover ~ #landing-background-2{ 
   filter: alpha(opacity=100);
   opacity: 1;
   z-index: 2;
 }
 
-#button-3:hover ~ #landing-background-3{ 
+#link-category-3:hover ~ #landing-background-3{ 
+  filter: alpha(opacity=100);
+  opacity: 1;
+  z-index: 2;
+}
+
+#link-category-4:hover ~ #landing-background-4{ 
+  filter: alpha(opacity=100);
+  opacity: 1;
+  z-index: 2;
+}
+
+#link-category-5:hover ~ #landing-background-5{ 
+  filter: alpha(opacity=100);
+  opacity: 1;
+  z-index: 2;
+}
+
+#link-category-6:hover ~ #landing-background-6{ 
   filter: alpha(opacity=100);
   opacity: 1;
   z-index: 2;
