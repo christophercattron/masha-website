@@ -90,8 +90,6 @@ body {
 }
 
 
-
-
 #name-main {
   color: white;
   left:50%;
@@ -100,6 +98,7 @@ body {
   bottom: 10%;
   margin: 0 auto;
   z-index: 16;
+  
 }
 
 .name-main-header{ /*Use this to edit the h1 elements in the name-main space */
@@ -107,6 +106,7 @@ body {
   font-variant: small-caps;
   font-family: 'Merriweather', serif;
   font-size: 5vmin;
+
 
 }
 
