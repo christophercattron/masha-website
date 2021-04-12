@@ -63,7 +63,7 @@ body {
   margin: 0 auto;
   opacity: 1;
   transition: opacity 2s;
-  transition-delay: 0.5s;
+  /*transition-delay: 0.5s;*/
 }
 
 #masha-main-color {
@@ -76,7 +76,7 @@ body {
   margin: 0 auto;
   opacity: 0;
   transition: opacity 2s;
-  transition-delay: 0.5s;
+  /*transition-delay: 0.5s;*/
 }
 
 #masha-main-russia {
@@ -89,7 +89,7 @@ body {
   margin: 0 auto;
   opacity: 0;
   transition: opacity 2s;
-  transition-delay: 0.5s;
+  /*transition-delay: 0.5s;*/
 }
 
 /* When you hover over masha-main, it disappears */
@@ -100,7 +100,7 @@ body {
 /* When you hover over masha-main, masha-main-color appears */
 #masha-main:hover ~ #masha-main-color{
   opacity: 1;
-  transition-delay: 0s;
+  /*transition-delay: 0;*/
 }
 
 #name-main {
@@ -216,7 +216,7 @@ body {
   bottom: 50%;
 }
 
-#link-category-6{ /* Seattle U Student */
+#link-category-6{ /* Undergraduate Student */
   left:85.714286%;
   transform: translate(-50%, 0);
   bottom: 25%;
