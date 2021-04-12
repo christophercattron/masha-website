@@ -53,44 +53,34 @@ body {
 }
 
 
-#masha-main {
-  width: auto;
-  height: 100%;
-  left:50%;
-  position: absolute;
-  z-index: 15;
-  transform: translate(-50%, 0);
-  margin: 0 auto;
-  opacity: 1;
-  transition: opacity 2s;
-  /*transition-delay: 0.5s;*/
-}
-
-#masha-main-color {
-  width: auto;
-  height: 100%;
-  left:50%;
-  position: absolute;
-  z-index: 14;
-  transform: translate(-50%, 0);
-  margin: 0 auto;
-  opacity: 0;
-  transition: opacity 2s;
-  /*transition-delay: 0.5s;*/
-}
-
+#masha-main,
+#masha-main-color,
+#masha-main-camera,
 #masha-main-russia {
   width: auto;
   height: 100%;
   left:50%;
   position: absolute;
-  z-index: 13;
   transform: translate(-50%, 0);
   margin: 0 auto;
-  opacity: 0;
   transition: opacity 2s;
   /*transition-delay: 0.5s;*/
 }
+
+/* Masha-main starts visible, z-index 15 */
+#masha-main{
+  opacity: 1;  
+  z-index: 15;
+}
+
+/* All masha-mains (except initial masha-main) start transparent; z-index 14 (so it is below masha-main)*/
+#masha-main-color,
+#masha-main-camera,
+#masha-main-russia {
+  opacity: 0;
+  z-index: 14;
+}
+
 
 /* When you hover over masha-main, it disappears */
 #masha-main:hover{
@@ -133,7 +123,7 @@ body {
   margin: 0 0;
   font-variant: small-caps;
   font-family: 'Merriweather', serif;
-  font-size: 5vmin;
+  font-size: 6vmin;
   text-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
   text-align: center;
 }
@@ -249,7 +239,8 @@ body {
 
 
 
-#link-category-1:hover ~ #landing-background-1 { 
+#link-category-1:hover ~ #landing-background-1,
+#link-category-1:hover ~ #masha-main-camera { 
   filter: alpha(opacity=100); /* for IE */
   opacity: 1;
 }
