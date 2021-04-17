@@ -56,7 +56,8 @@ body {
 #masha-main,
 #masha-main-color,
 #masha-main-camera,
-#masha-main-russia {
+#masha-main-russia,
+#masha-main-cancer {
   width: auto;
   height: 100%;
   left:50%;
@@ -76,7 +77,8 @@ body {
 /* All masha-mains (except initial masha-main) start transparent; z-index 14 (so it is below masha-main)*/
 #masha-main-color,
 #masha-main-camera,
-#masha-main-russia {
+#masha-main-russia,
+#masha-main-cancer {
   opacity: 0;
   z-index: 14;
 }
@@ -251,7 +253,8 @@ body {
   opacity: 1;
 }
 
-#link-category-3:hover ~ #landing-background-3 { 
+#link-category-3:hover ~ #landing-background-3,
+#link-category-3:hover ~ #masha-main-cancer { 
   filter: alpha(opacity=100); /* for IE */
   opacity: 1;
 }
