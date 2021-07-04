@@ -289,6 +289,216 @@ body {
 
 
 
+
+
+/*ft.modal for popups*/
+
+.ft-modal {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+  z-index: 9999;	
+  overflow: auto;
+	position: fixed;
+  visibility: hidden;
+	margin-top: -250px;
+	background: rgba(0,0,0,.85);
+	
+	transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+  
+  font-family: "Mulish";
+  color: white;
+  
+}
+ 
+.ft-modal:target {
+	opacity: 1;
+	margin-top: 0px;
+	visibility: visible;	
+}
+ 
+.ft-modal-content {
+	width: 70%;
+    padding: 25px;
+
+    
+    /*
+    background: #420039;
+    background: -moz-linear-gradient(top, #420039 0%, #932F6D 100%, #E07BE0 100%);
+    background: -webkit-linear-gradient(top, #420039 0%, #932F6D 100%, #E07BE0 100%);
+    background: linear-gradient(to bottom, #420039 0%, #932F6D 100%, #E07BE0 100%);
+    */
+
+
+	max-width: 1100px;
+    margin: 70px auto;
+	position: relative;
+	border-radius: 8px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+
+
+
+}
+ 
+
+.ft-modal-close {
+	top: 30px;
+	right: 60px;
+	float: right;
+	position: fixed;
+  
+  transition: all ease-in-out 1s;
+}
+
+.ft-modal-close:hover {
+  transform: scale(1.1);
+  
+}
+
+.ft-modal-close-text {
+  font-size: xx-small; 
+  color: white!important; 
+  margin:0; 
+  text-align: center;"
+  
+}
+
+.ft-modal-close-text:link,
+.ft-modal-close-text:visited,
+.ft-modal-close-text:hover,
+.ft-modal-close-text:active{
+  text-decoration: none
+}
+
+
+
+
+
+
+
+.ft-modal figure {
+   display: inline-block;
+   padding: 10px;
+   margin: 0 10px 10px 0;
+   text-align: center;
+
+}
+
+.ft-modal figure img{
+  width: 300px;
+  height: auto;
+  
+}
+
+.ft-modal figcaption {
+ padding: 5px;
+  width: 300px;
+ height: auto;
+  font-size: small;
+}
+
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+}
+
+
+.image {
+  border-radius: 4px;
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+
+  .image:before {
+    pointer-events: none;
+    background-image: url("../../images/overlay.png");
+    background-color: rgba(19, 21, 25, 0.5);
+    border-radius: 4px;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .image img {
+    border-radius: 4px;
+    display: block;
+  }
+
+  .image.left, .image.right {
+    max-width: 40%;
+  }
+
+    .image.left img, .image.right img {
+      width: 100%;
+    }
+
+  .image.left {
+    float: left;
+    padding: 0 1.5em 1em 0;
+    top: 0.25em;
+  }
+
+  .image.right {
+    float: right;
+    padding: 0 0 1em 1.5em;
+    top: 0.25em;
+  }
+
+  .image.fit {
+    display: block;
+    margin: 0 0 2rem 0;
+    width: 100%;
+  }
+
+    .image.fit img {
+      width: 100%;
+    }
+
+  .image.ft-modal-header {
+    display: block;
+    margin: 2.5rem 0;
+    width: 100%;
+  }
+
+    .image.ft-modal-header img {
+      width: 100%;
+    }
+
+  @media screen and (max-width: 736px) {
+
+    .image.ft-modal-header {
+      margin: 2rem 0;
+    }
+
+  }
+
+  @media screen and (max-width: 480px) {
+
+    .image.ft-modal-header {
+      margin: 1.5rem 0;
+    }
+
+  }
+
+
+
+
+
+
+
 /*-----------------------------------------*/
 /*-------------    Footer    --------------*/
 /*-----------------------------------------*/
@@ -297,6 +507,7 @@ footer{
   text-align: center!important;
   padding-top: 64px!important;
   padding-bottom: 64px!important;
+  background-image: url(https://cdn.wallpapersafari.com/12/36/kOo0St.png);
 }
 
 .to-the-top-button{
