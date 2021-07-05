@@ -283,6 +283,64 @@ body {
 }
 
 
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+
+  .link-category {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  #link-category-1{ /* Amateur Photographer */
+    left:14.285714%;
+    transform: translate(-50%, 0);
+    bottom: 25%;
+  }
+  
+  #link-category-2{ /* cPTSD Fighter/Advocate */
+    left: 21.428571%;
+    transform: translate(-50%, 0);
+    bottom: 50%;
+  }
+  
+  #link-category-3{ /* Childhood Cancer Survivor */
+  
+  }
+  
+  #link-category-4{ /* Aspiring Doctor and Author */
+
+  }
+  
+  #link-category-5{ /* Russian Orphan/Adoptee */
+
+  }
+  
+  #link-category-6{ /* Undergraduate Student */
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
 /*-------------     END      --------------*/
 /*_________________________________________*/
 
@@ -571,14 +629,18 @@ footer a:visited {
   color: white;
 }
 
+/*-------------     END      --------------*/
+/*_________________________________________*/
 
 
 
 
 
+/*--------------------------------------------*/
+/*-------------    Preloader    --------------*/
+/*--------------------------------------------*/
 
 
-/*loader*/
 .loader-wrapper {
   width: 100%;
   height: 100%;
@@ -594,6 +656,16 @@ footer a:visited {
 
 .loader img{
   border: 20px solid #292929;
+  max-width: 320px;
+}
+
+
+@media screen and (max-width: 400px) {
+
+  .loader img {
+    width: 80%;
+  }
+
 }
 
 
