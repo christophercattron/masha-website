@@ -57,7 +57,8 @@ body {
 #masha-main-color,
 #masha-main-camera,
 #masha-main-russia,
-#masha-main-cancer {
+#masha-main-cancer, 
+#masha-main-cptsd {
   width: auto;
   height: 100%;
   left:50%;
@@ -83,7 +84,8 @@ body {
 #masha-main-color,
 #masha-main-camera,
 #masha-main-russia,
-#masha-main-cancer {
+#masha-main-cancer, 
+#masha-main-cptsd  {
   opacity: 0;
   z-index: 14;
 }
@@ -255,7 +257,8 @@ body {
 }
 
 
-#link-category-2:hover ~ #landing-background-2 { 
+#link-category-2:hover ~ #landing-background-2,
+#link-category-2:hover ~ #masha-main-cptsd { 
   filter: alpha(opacity=100); /* for IE */
   opacity: 1;
 }
@@ -546,12 +549,20 @@ body {
     width: 100%;
   }
 
-    .image.ft-modal-header img {
+    .modal-hero-image-background {
       width: 100%;
       height: auto;
       max-height: 350px;
       object-fit: cover;
     }
+
+
+    .modal-hero-image-foreground{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 85%;
+  }
 
   @media screen and (max-width: 736px) {
 
