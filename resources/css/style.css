@@ -65,11 +65,11 @@ body {
   transform: translate(-50%, 0);
   margin: 0 auto;
   /* transitions */
-  -webkit-transition: opacity 2s ease;
-     -moz-transition: opacity 2s ease;
-      -ms-transition: opacity 2s ease;
-       -o-transition: opacity 2s ease;
-          transition: opacity 2s ease;
+  -webkit-transition: 1s all 0.2s ease;
+     -moz-transition: 1s all 0.2s ease;
+      -ms-transition: 1s all 0.2s ease;
+       -o-transition: 1s all 0.2s ease;
+          transition: 1s all 0.2s ease;
   /*transition-delay: 0.5s;*/
 }
 
@@ -140,11 +140,11 @@ body {
   display: block;
   position: absolute;
   /* transitions */
-  -webkit-transition: all 2s ease;
-     -moz-transition: all 2s ease;
-      -ms-transition: all 2s ease;
-       -o-transition: all 2s ease;
-          transition: all 2s ease;
+  -webkit-transition: 1s all 0.2s ease;
+     -moz-transition: 1s all 0.2s ease;
+      -ms-transition: 1s all 0.2s ease;
+       -o-transition: 1s all 0.2s ease;
+          transition: 1s all 0.2s ease;
   
 }
 
@@ -168,11 +168,11 @@ body {
   text-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
 
   /* transitions */
-  -webkit-transition: all 2s ease;
-     -moz-transition: all 2s ease;
-      -ms-transition: all 2s ease;
-       -o-transition: all 2s ease;
-          transition: all 2s ease;
+  -webkit-transition: 1s all 0.2s ease;
+     -moz-transition: 1s all 0.2s ease;
+      -ms-transition: 1s all 0.2s ease;
+       -o-transition: 1s all 0.2s ease;
+          transition: 1s all 0.2s ease;
 }
 
 /*This will undo changes to the text decoration (e.g., underline, color-change, etc.) of 
@@ -308,13 +308,18 @@ body {
 	margin-top: -250px;
 	background: rgba(0,0,0,.85);
 	
-	transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out;
+	transition: all .9s ease-in-out;
+	-moz-transition: all .9s ease-in-out;
+	-webkit-transition: all .9s ease-in-out;
   
   font-family: "Mulish";
   color: white;
   
+}
+
+.ft-modal-title{
+  font-size: larger;
+  text-align: center;
 }
  
 .ft-modal:target {
@@ -356,12 +361,15 @@ body {
 	right: 60px;
 	float: right;
 	position: fixed;
-  
-  transition: all ease-in-out 1s;
 }
 
-.ft-modal-close:hover {
-  transform: scale(1.1);
+.ft-modal-close img{
+  transition: all ease-in 0.3s;
+  filter: brightness(50%);
+}
+
+.ft-modal-close img:hover {
+  filter: brightness(100%);
   
 }
 
@@ -389,7 +397,6 @@ body {
 .ft-modal figure {
    display: inline-block;
    padding: 10px;
-   margin: 0 10px 10px 0;
    text-align: center;
 
 }
@@ -409,10 +416,12 @@ body {
 
 .right{
   float: right;
+  margin: 0 0 10px 0;
 }
 
 .left{
   float: left;
+  margin: 0 10px 0 0;
 }
 
 
@@ -481,6 +490,9 @@ body {
 
     .image.ft-modal-header img {
       width: 100%;
+      height: auto;
+      max-height: 350px;
+      object-fit: cover;
     }
 
   @media screen and (max-width: 736px) {
