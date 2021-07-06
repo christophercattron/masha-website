@@ -58,12 +58,15 @@ body {
 #masha-main-camera,
 #masha-main-russia,
 #masha-main-cancer, 
-#masha-main-cptsd {
+#masha-main-cptsd,
+#masha-main-doctor,
+#masha-main-student {
   width: auto;
   height: 100%;
   left:50%;
   position: absolute;
   transform: translate(-50%, 0);
+  filter: drop-shadow(2px 5px 10px rgba(0,0,0,0.60));
   margin: 0 auto;
   /* transitions */
   -webkit-transition: 1s all 0.2s ease;
@@ -85,7 +88,9 @@ body {
 #masha-main-camera,
 #masha-main-russia,
 #masha-main-cancer, 
-#masha-main-cptsd  {
+#masha-main-cptsd,
+#masha-main-doctor,
+#masha-main-student {
   opacity: 0;
   z-index: 14;
 }
@@ -269,7 +274,8 @@ body {
   opacity: 1;
 }
 
-#link-category-4:hover ~ #landing-background-4 { 
+#link-category-4:hover ~ #landing-background-4,
+#link-category-4:hover ~ #masha-main-doctor { 
   filter: alpha(opacity=100); /* for IE */
   opacity: 1;
 }
@@ -280,7 +286,8 @@ body {
   opacity: 1;
 }
 
-#link-category-6:hover ~ #landing-background-6 { 
+#link-category-6:hover ~ #landing-background-6,
+#link-category-6:hover ~ #masha-main-student { 
   filter: alpha(opacity=100); /* for IE */
   opacity: 1;
 }
