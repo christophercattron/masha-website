@@ -9,11 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><!--For Google fonts Merriweather, Libre Franklin, and Mulish-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Font Awesome 4.7.0-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--MOST JAVASCRIPT IS AT THE END OF THE BODY SECTION-->
+
   </head>
 
 
 <!-- Body Content -->
   <body>  
+
+      <div class="loader-wrapper">
+        <span class="loader"><img src="./resources/images/dolls-preloader.gif" ><h5 class="preloader-text">Loading...</h5></span>
+      </div>
+
 
       <div class="landing-container">
 
@@ -24,6 +31,7 @@
         <a class="link-category" id="link-category-4" href="#ft-doctor-modal">Aspiring Doctor and Author</a><!--"I almost feel guilty lumping these two together, but I did because they both have to do with Masha's vision—her impecible ability to envision where she wants to be, to dream, to set her sights on a goal and follow-through..."-->
         <a class="link-category" id="link-category-5" href="#ft-orphan-modal">Russian Orphan and Adoptee</a>  
         <a class="link-category" id="link-category-6" href="#ft-student-modal">Undergraduate Student</a>
+        <a class="link-category" id="link-category-7" href="#ft-cat-modal" style="opacity: 0;">CAT</a>
 
 
         <!--Landing Background Images-->
@@ -31,10 +39,10 @@
         <img class="landing-background" id="landing-background-1" src="./resources/images/bee-photo.JPG"><!-- Amateur Photographer -->
         <img class="landing-background" id="landing-background-2" src="./resources/images/umbrella.JPEG"><!-- cPTSD Fighter/Advocate -->
         <img class="landing-background" id="landing-background-3" src="https://s3.amazonaws.com/static.wd7.us/b/b3/ALL-L3_0001.jpg"><!-- Childhood Cancer Survivor -->
-        <img class="landing-background" id="landing-background-4" src="./resources/images/ca-mountains.JPG"><!-- Aspiring Doctor and Author -->
+        <img class="landing-background" id="landing-background-4" src="./resources/images/anatomy-sketches-masha.jpg"><!-- Aspiring Doctor and Author -->
         <img class="landing-background" id="landing-background-5" src="./resources/images/russian-orphanage-1.jpg"><!-- Russian Orphan/Adoptee -->
         <img class="landing-background" id="landing-background-6" src="./resources/images/su-campus.jpg"><!-- Undergraduate Student -->
-
+        <img class="landing-background" id="landing-background-7" src="./resources/images/sccc-campus.JPG"><!-- Daisy the Cat Student -->
 
         <!--Masha Main Images-->
         <img id="masha-main" src="resources/images/masha-main-b&w-low-contrast.png">
@@ -42,10 +50,10 @@
         <img id="masha-main-camera" src="resources/images/masha-main-camera.png">
         <img id="masha-main-cptsd" src="resources/images/masha-cptsd-2.png">
         <img id="masha-main-cancer" src="resources/images/masha-cancer-main-3.png">
-        <img id="masha-main-doctor" src="resources/images/masha-main-writer-5.png">
+        <img id="masha-main-doctor" src="resources/images/masha-look-at-art-transparent.png">
         <img id="masha-main-russia" src="resources/images/masha-russia-2.png">
         <img id="masha-main-student" src="resources/images/masha-main-student.png">
-
+        <img id="daisy-main" src="resources/images/daisy-short.png">
 
 
         <!--Main Name Displays-->
@@ -71,7 +79,7 @@
               <h3 class="ft-modal-title">Amateur Photographer, Writer, and Artist</h3>
             </div>
             <span class="image ft-modal-header">
-              <img class="modal-hero-image-background" src="./resources/images/masha-photograph.jpg" alt="" />
+              <img class="modal-hero-image-background" src="./resources/images/masha-photography/masha-photograph.jpg" alt="Masha taking photo in a field of sunflowers with iPhone" />
               <img class="modal-hero-image-foreground" src=""/>
             </span>
           </div>
@@ -151,7 +159,14 @@
         <div class="ft-modal-body">
           <p>In April 2004, at the age of seven, Masha became very sick. She was fatigued, feverish, dizzy, and nauseous. Masha was still living at home with her mama when she became sick, and Mama was already battling a severe case of tuberculosis (that would ultimately end up taking her life). Masha has memories of Mama treating her with homemade folk remedies such as drinking pepper-infused vodka or—Masha's personal favorite—boiling a pot of potatoes underneath a blanket and inhaling the fumes. Due to her own declining health and inability to give Masha the care she needed, in August 2004, Mama made the difficult decision to take Masha to a social rehabilitation center for minor children, where she could receive the treatment and care she needed. Mama told Masha “I will come back for you”. Masha remembers being shaved bald and placed into a scalding hot bath upon admission to the center. She has eerie memories of this place… After some difficulty and delay in diagnosing Masha, she was eventually transferred to the Regional Children's Clinical Hospital No. 1 in Vladivostok where she was diagnosed with acute lymphoblastic leukemia (ALL).</p>
           <figure class="right">
-            <img src="https://picsum.photos/500/340" alt="test image">
+            <!--Image-->
+            <img id="myImg1" class="myImg" src="./resources/images/forest-standing.JPG" style="width:100%;max-width: 300px;" alt="Masha's Orphanage">
+            <!--image modal-->
+            <div id="myModal1" class="modal myModal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div class="caption" id="caption1"></div>
+            </div>
             <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
           </figure>
           <p>All alone and just barely over 8 years old, Masha began treatment for her cancer at the hospital in Vladivostok. Though she was classified as an intermediary risk group, she was given a more intense treatment meant for high risk patients which notably included more intense chemotherapy and cranial radiation. The hospital where she was treated was notoriously unsatisfactory: unkempt, stale dry air, dirty, dilapidated, harsh medical staff, and most notably infested with cockroaches. In December 2006, after 106 weeks of fierce fighting, intense suffering, and lonely treatments, Masha completed the last stage of her cancer treatment. This brave, resilient 10 year-old girl had beat cancer.</p>
@@ -161,7 +176,7 @@
           </figure>
           <p>After being adopted and brought to the United States, Masha's doctors were surprised to read the details of her treatment. They were astonished at the intensity of her treatment, noting that the measures taken were usually reserved for high-risk patients. It wasn't until Masha was older that she read more and learned that she was actually a part of a medical study based on the Moscow-Berlin 2002 treatment protocol, which was carried out at clinics across Russian and Belarus between 2002 and 2008 to investigate the efficacy of a treatment protocol for ALL in children and adolescents. The study found that patients in the intermediary risk group experienced better outcomes when given the high-risk treatment, despite its increased intensity and toxicity. Masha's experience as a cancer patient while an orphan in Russia was deeply traumatizing to say the least, but it fostered a deep curiosity and fascination about the human body, cancer, and medicine. Her battle and subsequent curiosity instilled a passion and deep motivation to the enter the medical field.</p>
           <hr>
-          <p>Learn more about Masha's aspirations in medicine and more by clicking here.</p>
+          <p>Learn more about Masha's aspirations in medicine and more by clicking <a href="#ft-doctor-modal">here</a></p>
           <hr>
         </div>
         <div class="ft-modal-footer">
@@ -282,35 +297,54 @@
   </div>
   <!--END Undergraduate Student Modal-->
 
+  <!--Daisy the Cat Modal-->
+  <div class="ft-modal" id="ft-cat-modal">
+    <div class="ft-modal-content">
+      <div class="ft-modal-header">
+        <div class="header">
+          <h3 class="ft-modal-title">Daisy the Cat</h3>
+        </div>
+        <span class="image ft-modal-header"><img src="./resources/images/anatomy (6).jpg" alt="" /></span>
+      </div>
+      <div class="ft-modal-body">
+        <p>Oops! You accidently found Daisy! Daisy is Masha's pet cat! Daisy is just over three years old and loves to go for walks, cuddle, and be super mischievous at the most annoying hours of the day (or night).</p>
+        <figure class="right">
+          <img src="https://picsum.photos/500/340" alt="test image">
+          <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+        </figure>
+        <p>All alone and just barely over 8 years old, Masha began treatment for her cancer at the hospital in Vladivostok. Though she was classified as an intermediary risk group, she was given a more intense treatment meant for high risk patients which notably included more intense chemotherapy and cranial radiation. The hospital where she was treated was notoriously unsatisfactory: unkempt, stale dry air, dirty, dilapidated, harsh medical staff, and most notably infested with cockroaches. In December 2006, after 106 weeks of fierce fighting, intense suffering, and lonely treatments, Masha completed the last stage of her cancer treatment. This brave, resilient 10 year-old girl had beat cancer.</p>
+        <figure class="left">
+          <img src="https://picsum.photos/500/340" alt="test image">
+          <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+        </figure>
+        <p>After being adopted and brought to the United States, Masha's doctors were surprised to read the details of her treatment. They were astonished at the intensity of her treatment, noting that the measures taken were usually reserved for high-risk patients. It wasn't until Masha was older that she read more and learned that she was actually a part of a medical study based on the Moscow-Berlin 2002 treatment protocol, which was carried out at clinics across Russian and Belarus between 2002 and 2008 to investigate the efficacy of a treatment protocol for ALL in children and adolescents. The study found that patients in the intermediary risk group experienced better outcomes when given the high-risk treatment, despite its increased intensity and toxicity. Masha's experience as a cancer patient while an orphan in Russia was deeply traumatizing to say the least, but it fostered a deep curiosity and fascination about the human body, cancer, and medicine. Her battle and subsequent curiosity instilled a passion and deep motivation to the enter the medical field.</p>
+        <hr>
+        <p>Learn more about Masha's aspirations in medicine and more by clicking here.</p>
+        <hr>
+      </div>
+      <div class="ft-modal-footer">
+        <a class="ft-modal-close" href="#">
+          <img src="./resources/images/russian-close-button.png" width="auto" height="50">
+          <p style="font-size: xx-small; color: white!important; margin:0; text-align: center;">Close</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--END Daisy the Cat Modal-->
 
 
   <!-- End Modals -->
 
 
+  <!--JAVASCRIPT-->
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
 
+    <script src="resources/js/modal-image.js"></script><!--Makes modal image popups work-->
 
-
-  <!-- About Section -->
-  <!--
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Name</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
-  -->
-  <!-- End About Section -->
-  <div class="loader-wrapper">
-    <span class="loader"><img src="./resources/images/dolls-preloader.gif" ><h5 class="preloader-text">Loading...</h5></span>
-  </div>
-
-  <script>
-      $(window).on("load",function(){
-        $(".loader-wrapper").fadeOut("slow");
-      });
-  </script>
   </body><!-- END Body Content -->
 
 
@@ -324,7 +358,7 @@
           <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
 
       </div>
-      <p class="last-updated">Last Updated: Sunday 4th July, 2021 | 11:42 PST</p>
+      <p class="last-updated">Last Updated: Sunday 11th July, 2021 | 19:42 PST</p>
       <p>Copyright &copy; 2021 All Rights Reserved by the Celebrate Masha team.</p>
   </footer><!-- End Footer -->
 
