@@ -427,7 +427,7 @@ body {
  
 .ft-modal-content {
 	width: 70%;
-    padding: 25px;
+  padding: 25px;
 
     
     /*
@@ -439,7 +439,7 @@ body {
 
 
 	max-width: 1150px;
-    margin: 70px auto;
+  margin: 25px auto;
 	position: relative;
 	border-radius: 8px;
 
@@ -676,23 +676,36 @@ body {
   }
   
   /* The Close Button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
   
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
+  .close {
+    top: 39px;
+    right: 100px;
+    float: right;
+    position: fixed;
     cursor: pointer;
   }
   
+  .close img{
+    transition: all ease-in 0.3s;
+    filter: brightness(50%);
+  }
+  
+  .close img:hover {
+    filter: brightness(100%);
+    
+  }
+  
+  .close-text {
+    font-size: xx-small; 
+    color: white!important; 
+    margin:0; 
+    text-align: center;"
+    
+  }
+
+
+
+
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
     .modal-content {
