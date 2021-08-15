@@ -828,7 +828,7 @@ body {
   {
       text-align: center;
       color: #fff;
-      background: rgba(0, 50, 73, 0.95);
+      background: rgba(38, 56, 72, 0.99);
       position: absolute;
       z-index: 100;
       padding: 15px;
@@ -840,7 +840,7 @@ body {
           height: 0;
           border-left: 10px solid transparent;
           border-right: 10px solid transparent;
-          border-top: 10px solid rgba(0, 50, 73, 0.95);
+          border-top: 10px solid rgba(38, 56, 72, 0.99);
           content: '';
           position: absolute;
           left: 50%;
@@ -851,7 +851,7 @@ body {
           #tooltip.top:after
           {
               border-top-color: transparent;
-              border-bottom: 10px solid rgba(0, 50, 73, 0.95);
+              border-bottom: 10px solid rgba(38, 56, 72, 0.99);
               top: -20px;
               bottom: auto;
           }
