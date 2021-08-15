@@ -806,6 +806,7 @@ body {
   margin-bottom: 25px;
   }
   #bookshelf a:after {
+  /*
   content:"";
   position: absolute;
   bottom: -6px;
@@ -813,6 +814,7 @@ body {
   right: 0;
   height: 10px;
   background-color: #777;
+  */
   }
   
   
