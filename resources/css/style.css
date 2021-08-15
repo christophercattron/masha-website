@@ -144,6 +144,28 @@ body {
   text-align: center;
 }
 
+.name-main-header-v2:hover{ /*Use this to edit the h1 elements in the name-main-v2 space */
+  cursor: default;
+}
+
+.name-main-header-v3{ /*Use this to edit the h5 elements in the name-main-v2 space */
+  margin: 0 0;
+  font-family: 'Merriweather', serif;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
+  text-align: center;
+  opacity: .5;
+  /* transitions */
+  -webkit-transition: 1s all 0.2s ease;
+     -moz-transition: 1s all 0.2s ease;
+      -ms-transition: 1s all 0.2s ease;
+       -o-transition: 1s all 0.2s ease;
+          transition: 1s all 0.2s ease;
+}
+
+.name-main-header-v3:hover{ /*Use this to edit the h5 elements in the name-main-v2 space */
+  opacity: 1;
+  cursor: default;
+}
 
 .landing-background{
   display: block;
