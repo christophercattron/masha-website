@@ -629,6 +629,13 @@ body {
       object-fit: cover;
     }
 
+  
+    .modal-hero-image-foreground-2 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+    }
 
     .modal-hero-image-foreground{
       position: absolute;
