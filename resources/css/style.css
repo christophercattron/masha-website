@@ -44,6 +44,23 @@ body {
 }
 
 
+/* FLEX DIV (used in Childhood Cancer Survivor modal images) */
+.flex-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .flex-div {
+    display: block;
+  }
+
+}
+/* END FLEX DIV */
+
+
 .landing-container {
   background-color: #999;
   margin: 0;
