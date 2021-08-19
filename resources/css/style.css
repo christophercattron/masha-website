@@ -826,10 +826,12 @@ body {
     position: relative;
     display: inline-block;
     /*width: 150px;*/
-    height: 150px;
+    height: 80px;
     width: auto;
     bottom: 0;
     transition: all 1000ms ease-in-out;
+    border-radius: 5%;
+
   }
   
   #bookshelf img:hover{
@@ -878,6 +880,7 @@ body {
       z-index: 100;
       padding: 15px;
   }
+
    
       #tooltip:after /* triangle decoration */
       {
