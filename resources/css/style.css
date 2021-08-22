@@ -762,13 +762,180 @@ body {
   }
 
 
-
-
-
-
 /*-------------     END      --------------*/
 /*_________________________________________*/
 
+
+
+
+/*-----------------------------------------------*/
+/*--------------MODAL IMAGE GALLERY--------------*/
+/*-----------------------------------------------*/
+
+/*-------------------Modal Image Gallery (mig)-------------------*/
+
+.mig-main-image-container{
+  position: relative;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mig-main-image-container img {
+  position: relative;
+  display: inline-block;
+  height: 150px;
+  width: auto;
+  bottom: 0;
+  transition: all 750ms ease-in-out;
+}
+
+.mig-main-image-container img:hover{
+  filter: brightness(1.05);
+  transform: scale(1.01);
+  bottom: 5px;
+}
+
+
+
+/* The Modal mig (background) */
+.modal-mig {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+/* Modal mig Content */
+.modal-content-mig {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+
+
+
+  /* Add Animation */
+  .modal-content-mig, .caption-mig {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+
+
+.migSlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color:#fff;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+.demo-mig {
+  opacity: 0.6;
+}
+.active,
+.demo-mig:hover {
+  opacity: 1;
+}
+
+
+.small-square{
+  height: 85px;
+  width: 25%;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+  
+  bottom: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.small-square:hover{
+  filter: brightness(1.02);
+  transform: scale(1.01);
+  bottom: 3px;
+}
+
+
+.demo-container {
+  position: relative;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 
 
