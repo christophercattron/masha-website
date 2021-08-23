@@ -274,6 +274,26 @@ body {
   bottom: 0;
 }
 
+#link-category-8{ /* Resources */
+  bottom: -50px;
+  color: white;
+  position: absolute;
+  z-index: 30;
+  font-family: 'Libre Franklin', sans-serif;
+  font-style: italic;
+  font-size: x-large;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#link-category-8:link,
+#link-category-8:visited,
+#link-category-8:hover,
+#link-category-8:active{
+  text-decoration: none
+}
+
 /* all landing-background elements are initially transparent */
 .landing-background{
   filter: alpha(opacity=0); /* for IE */
