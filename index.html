@@ -28,6 +28,57 @@
       </div>
 
 
+
+      <!--START OPENING OVERLAY-->
+      <div id="opening-overlay" onclick="off()" title="Click anywhere to close this window">
+          <div class="text">WELCOME!</div>
+          <div class="oo-textbox">
+            <p>This year marks the 15-year anniversary of Masha completing her cancer treatment in Russia.</p>
+            <p>This website serves to inform about Masha's story, contextualize her experiences, and ultimately to <emphasis>celebrate</emphasis> Masha!</p>
+            <p>Explore the many sides of Masha's life at the "Who is Masha" landing, or scroll down to see ways you can celebrate Masha.</p>
+          </div>
+          <div class="text"><br>
+          <br><span style="font-size:10px;" class="">Click anywhere to close this window</span></div>
+      </div><!--the overlay that starts when the page is loaded-->
+      <style>
+        #opening-overlay {
+            position: fixed; /* Sit on top of the page content */
+            display: default; /* Default by default */
+            width: 100%; /* Full width (cover the whole page) */
+            height: 100%; /* Full height (cover the whole page) */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.85); /* Black background with opacity */
+            z-index: 100; /* Specify a stack order in case you're using a different order for other elements */
+            cursor: pointer; /* Add a pointer on hover */
+            text-align: center; /*Centers all text in opening overlay */
+                }
+
+        .oo-textbox{
+          text-align: center;
+          margin: auto;
+          border: black;
+          border-radius: 5px;
+          background-color: black;
+          max-width: 500px;
+          padding: 5px 20px;
+        }
+      </style>
+      <script>
+        function on() {
+          document.getElementById("opening-overlay").style.display = "block";
+        }
+
+        function off() {
+          document.getElementById("opening-overlay").style.display = "none";
+        }
+      </script>
+      <!--END OPENING OVERLAY-->
+
+
+
       <div class="landing-container">
 
         <!--Link Categories-->
@@ -1031,8 +1082,8 @@
   </div>
   <!--END Resources Modal-->
 
-
   <!-- End Modals -->
+
 
 
   <!--JAVASCRIPT-->
@@ -1155,6 +1206,24 @@
       <!--END Play sound on click js-->
 
     <!--END matroyshka open/close noises-->
+
+
+
+  <!--HOW TO CELEBRATE MASHA SECTION-->
+  <div id="celebrate-masha-sec">
+  Ways to Celebrate Masha:
+    • Share <a>this video</a>.
+    • Make a card and mail it to Masha at 
+      Celebrate Masha
+      P.O. Box XXXX
+      Seattle, WA XXXXX
+    • Share a message to Masha using <a>this Google Form</a>, or by sending an email to messages@celebratemasha.org
+    • Educate yourself on CPTSD and complex trauma
+    • Donate to trauma-informed, research-based non-profits
+  </div>
+
+
+
 
 
   </body><!-- END Body Content -->
